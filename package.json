@@ -7,13 +7,47 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9",
     "core-js": "^3.6.5",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^3.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0"
+    "@vue/compiler-sfc": "^3.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "install": "^0.13.0",
+    "npm": "^7.20.3",
+    "prettier": "^2.3.2",
+    "vue-cli-plugin-tailwind": "~2.0.6"
+  },
+  "babel": {
+    "presets": [
+      "@vue/cli-plugin-babel/preset"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": false,
+    "useTabs": false,
+    "trailingComma": "none",
+    "printWidth": 80
   },
   "browserslist": [
     "> 1%",
